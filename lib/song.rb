@@ -5,7 +5,6 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
-    @@count += 1
     Song.all << self
   end
 
@@ -22,7 +21,7 @@ class Song
   def self.genres
     self.all.map do |song|
       song.genre
-    end 
+    end
   end
 
 def self.genre_count
