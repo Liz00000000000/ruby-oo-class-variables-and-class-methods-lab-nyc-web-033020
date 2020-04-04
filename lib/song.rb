@@ -19,7 +19,7 @@ class Song
   def self.artists
     self.all.map do |song|
       song.artist
-    end
+    end.uniq
   end
 
   def self.genres
