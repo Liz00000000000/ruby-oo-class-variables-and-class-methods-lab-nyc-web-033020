@@ -42,7 +42,7 @@ def self.genre_count
      genre ||= hash[genre]
      hash[genre] = index
     end
-   return hash
+    hash
 end
 
 def self.artist_count
