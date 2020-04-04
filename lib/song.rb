@@ -38,6 +38,10 @@ class Song
 def self.genre_count
   #binding.pry
   hash = { }
+  genres.each_with_index do |genre , index |
+    if hash[genre] += 1
+    else hash[genre] = 1
+    end 
 end
 
 def self.artist_count
