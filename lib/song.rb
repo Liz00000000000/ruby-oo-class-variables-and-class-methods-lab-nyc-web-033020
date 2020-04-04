@@ -36,7 +36,7 @@ class Song
 def self.genre_count
   #binding.pry
   hash = { }
-  @@genres.each_with_index do |genre , index|
+  @@genres.each_with_index do |genre ,index|
      genre ||= hash[genre]
      hash[genre] = index
     end
