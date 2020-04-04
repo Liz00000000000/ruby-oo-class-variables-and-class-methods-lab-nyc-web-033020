@@ -12,6 +12,9 @@ class Song
      @@all
    end
 
+  def self.count
+    @@all.count
+  end 
   def self.artists
     self.all.map do |song|
       song.artist
