@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   attr_reader :name, :artist, :genre
   @@all = [ ]
@@ -35,7 +36,7 @@ class Song
   end
 
 def self.genre_count
-  binding.pry 
+  binding.pry
   hash = { }
   self.all.each do |song|
   song.each do |name, artist, genre|
