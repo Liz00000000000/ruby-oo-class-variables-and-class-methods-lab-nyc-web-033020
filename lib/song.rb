@@ -25,11 +25,11 @@ class Song
   def self.genres
     self.all.map do |song|
       song.genre
-    end
+    end.uniq
   end
 
 def self.genre_count
-  self.genre.count 
+  self.genre.count
 end
 
 def self.artist_count
