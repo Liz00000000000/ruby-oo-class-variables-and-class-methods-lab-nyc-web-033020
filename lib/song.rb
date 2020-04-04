@@ -39,7 +39,7 @@ def self.genre_count
   #binding.pry
   hash = {:pop => 0, :rap => 0 }
   self.all.each do |song|
-       if @genre="rap"
+       if song.genre="rap"
          hash[:rap] += 1
        elsif @genre="pop"
          hash[:pop] += 1
