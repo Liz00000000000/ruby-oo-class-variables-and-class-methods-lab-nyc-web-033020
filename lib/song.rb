@@ -39,7 +39,6 @@ def self.genre_count
   self.all.each do |name, artist, genre|
       hash[genre] += 1
     end
-  end
 end
 
 def self.artist_count
