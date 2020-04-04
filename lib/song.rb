@@ -21,7 +21,7 @@ class Song
 
   def self.genres
     self.all.map do |song|
-      song.genres
+      song.genre
   end
 
 def self.genre_count
