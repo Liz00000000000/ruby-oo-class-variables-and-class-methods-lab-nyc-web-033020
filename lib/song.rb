@@ -35,9 +35,10 @@ class Song
   end
 
 def self.genre_count
+  hash = { }
   self.all.each do |song|
     song.map do |name, artist, genre|
-      
+
 end
 
 def self.artist_count
