@@ -37,15 +37,7 @@ class Song
 
 def self.genre_count
   #binding.pry
-  hash = {:pop => 0, :rap => 0 }
-  self.all.each do |song|
-       if song.genre = "rap"
-         hash[:rap] += 1
-       elsif song.genre = "pop"
-         hash[:pop] += 1
-      end
-      return hash
-    end
+  hash = { }
 end
 
 def self.artist_count
