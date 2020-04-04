@@ -41,7 +41,8 @@ def self.genre_count
   genres.each_with_index do |genre , index |
     if hash[genre] += 1
     else hash[genre] = 1
-    end 
+    end
+  end 
 end
 
 def self.artist_count
