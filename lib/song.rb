@@ -36,7 +36,8 @@ class Song
 
 def self.genre_count
   self.all.each do |song|
-    song.
+    song.map do |name, artist, genre|
+      
 end
 
 def self.artist_count
