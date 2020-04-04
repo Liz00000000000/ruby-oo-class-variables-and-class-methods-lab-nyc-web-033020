@@ -44,7 +44,12 @@ def self.genre_count
 end
 
 def self.artist_count
-
+  hash = { }
+  @@artist.each do |genre, index|
+     genre ||= hash[genre]
+     hash[genre] = index
+    end
+    hash
 end
 
 end
