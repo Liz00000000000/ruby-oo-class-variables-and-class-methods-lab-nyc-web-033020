@@ -9,7 +9,7 @@ class Song
     Song.all << self
   end
 
-   def self.count
+   def self.all
      @@count
    end
 
