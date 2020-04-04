@@ -38,7 +38,7 @@ def self.genre_count
   hash = { }
   @@genres.each do |genre|
      genre ||= hash[genre]
-     hash[genre] = index
+     hash[genre] += 1
     end
     hash
 end
