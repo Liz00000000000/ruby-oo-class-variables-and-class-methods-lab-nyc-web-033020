@@ -14,9 +14,9 @@ class Song
    end
 
   def self.artists
-    self.all.select do |song|
+    self.all.map do |song|
       song.artist
-    end 
+    end
   end
 
   def self.genres
