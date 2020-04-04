@@ -14,7 +14,9 @@ class Song
    end
 
   def self.artists
-    @@artists.uniq
+    self.all.select do |song|
+      song.artist
+    end 
   end
 
   def self.genres
