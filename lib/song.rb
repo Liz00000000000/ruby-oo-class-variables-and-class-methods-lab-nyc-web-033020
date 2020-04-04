@@ -40,6 +40,7 @@ def self.genre_count
   hash = { }
   genres.each_with_index do |genre , index |
      genre ||= hash[genre]
+     hash[genre] = index
      return hash
 end
 
