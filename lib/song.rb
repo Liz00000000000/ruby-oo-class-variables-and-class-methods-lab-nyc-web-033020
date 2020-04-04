@@ -40,9 +40,9 @@ def self.genre_count
   hash = {:pop => nil, :rap => nil }
   self.all.each do |song|
        if @genre="rap"
-         hash[:rap] += 1
+         hash[:rap] + 1
        elsif @genre="pop"
-         hash[:pop] += 1
+         hash[:pop] + 1
       end
       return hash
     end
